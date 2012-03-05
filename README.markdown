@@ -14,3 +14,9 @@ Awesomeness Utilized
 * Haml [http://haml-lang.com/](http://haml-lang.com/)
 
 
+Getting Started
+---------------
+
+It's as simple as editing the items found in the app.rb file. Make sure to change and edit the Global Variables for the Facebook items and also the application.
+
+
