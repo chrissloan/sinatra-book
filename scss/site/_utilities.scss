@@ -1,0 +1,41 @@
+.center{
+  text-align: center;
+}
+
+.hide-me{
+  display: none !important;  
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px; width: 1px;
+  margin: -1px; 
+  padding: 0; 
+  border: 0;
+}
+
+.float-left{
+  @include float-left;  
+}
+
+.float-right{
+  @include float-right;  
+}
+
+.clearfix{
+  @include clearfix;  
+}
+
+.pie-clearfix{
+  @include pie-clearfix;  
+}
+
+.legroom{
+  @include margin-trailer(2);  
+}
+
+.less-legroom{
+  @include margin-trailer(1);  
+}

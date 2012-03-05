@@ -1,0 +1,17 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{
+ display: block;
+ margin: 0;
+}
+
+body{
+  @include blueprint-typography(true);
+  @include blueprint-utilities;
+  @include blueprint-interaction;
+}
+
+#app-wrapper{
+  @include clearfix;
+  width: 520px;
+  margin: 0 auto;
+  position: relative;
+}

@@ -1,0 +1,13 @@
+!!!
+%html{html_attrs}
+  = partial(:'layouts/_head')
+
+  %body
+    #fb-root
+    #app-wrapper
+     
+      = yield
+
+      = partial(:'layouts/_footer')
+
+    = partial(:'layouts/_scripts')

@@ -1,0 +1,16 @@
+$sprite-dimensions: true;
+$sprite-spacing: 10px;
+$sprite-base-class: 'spt';
+$hacked-sprite-base-class: '.' + $sprite-base-class; // this is a hack so that we can override the name of the class we want correctly
+
+$icons_small-sprite-dimensions: $sprite-dimensions;
+$icons_small-spacing: $sprite-spacing;
+//@import "elements/sprites/*.png";
+
+//@include all-sprites-sprites($icons_small-sprite-dimensions, 'spt.#{$sprite-base-class}');
+
+.spt{
+  @include inline-block;
+  @include hide-text;    
+}
+

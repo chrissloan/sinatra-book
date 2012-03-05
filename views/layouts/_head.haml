@@ -1,0 +1,14 @@
+%head
+  %meta{:'http-equiv' => "Content-Type", :content => "text/html; charset=utf-8"}
+  %meta{:name => "lang", :content => "en"}
+  %title=SITE_TITLE
+  %link{:href=>'/stylesheets/screen.css', :media => "screen", :rel => 'stylesheet', :type => "text/css"}
+  
+  /[if lt IE 9]
+    %script{src: '//html5shiv.googlecode.com/svn/trunk/html5.js'}
+
+  %meta{:property => "og:site_name", :content => "#{SITE_TITLE}"}
+  %meta{:property => "og:type", :content => "#{APP_TYPE}"}
+  %meta{:property => "og:title", :content => "#{PAGE_TITLE}"}
+  %meta{:property => "og:url", :content => "#{SITE_URL}"}
+  %meta{:property => "fb:admins", :content => "#{APP_ADMINS}"}

@@ -1,0 +1,21 @@
+%script{type: "text/javascript", src: 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'}
+%script{type: "text/javascript", src: '/javascripts/lib/site/compiled/global.js'}
+
+:javascript
+  window.fbAsyncInit = function() {
+  FB.init({appId: "#{APP_ID}", status: true, cookie: true, xfbml: true});
+  window.setTimeout(function() {
+    FB.Canvas.setAutoResize();
+  }, 250);
+  };
+  (function() {
+    var e = document.createElement('script'); e.async = true;
+    e.src = document.location.protocol +
+      '//connect.facebook.net/en_US/all.js';
+    document.getElementById('fb-root').appendChild(e);
+  }());
+
+  $(window).load(function() {
+
+  });
+
