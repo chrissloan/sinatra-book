@@ -21,6 +21,10 @@ SITE_TITLE = 'My Awesome Sinatra App'
 COMPANY_NAME = 'My Company'
 PAGE_TITLE = ''
 
+# Google Analytics
+USE_ANALYTICS = true
+GOOGLE_ANALYTIC_ID = 'UA-XXXXXXXX'
+
 # Set Sinatra variables
 set :app_file, __FILE__
 set :root, File.dirname(__FILE__)
