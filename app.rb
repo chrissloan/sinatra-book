@@ -35,8 +35,10 @@ enable :sessions
 
 # Application routes
 get '/' do
-  haml :'front/index', locals: {liked: false}, layout: :'layouts/application'
+  page = params[:p] || 'wall'
+  haml :"front/#{page}", locals: {liked: false}, layout: :'layouts/application'
 end
+
 
 # Facebook does post requests to show app
 post '/' do
