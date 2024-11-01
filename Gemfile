@@ -1,6 +1,6 @@
 source "http://rubygems.org"
 
-gem "sinatra", "~> 1.2.3"
+gem "sinatra", "~> 4.0.0"
 gem "coffee-script"
 gem "compass", "~> 0.11.1"
 gem "haml", "~> 3.1.1"
